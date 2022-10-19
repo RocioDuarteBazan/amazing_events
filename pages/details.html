@@ -7,76 +7,89 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/style/style_1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header container-fluid">
-      <div class="container-fluid d-flex row p-4 bg-transparent">
-        <img class=" imglogo rounded-1 col-2" src="../assets/img/logo.png" alt="logo" >
-        <ul class="nav justify-content-end align-items-center col-10 gap-5 bg-transparent">
-          <li class="nav-item bg-transparent">
-            <a class="nav-link rounded-1 fw-semibold fst-italic" aria-current="page" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item bg-transparent">
-            <a class="nav-link rounded-1 fw-semibold fst-italic" href="../pages/upcomingevents.html">Upcoming Events</a>
-          </li>
-          <li class="nav-item bg-transparent">
-            <a class="nav-link rounded-1 fw-semibold fst-italic" href="../pages/pastevents.html">Past Events</a>
-          </li>
-          <li class="nav-item bg-transparent">
-            <a class="nav-link rounded-1 fw-semibold fst-italic" href="../pages/contact.html">Contact</a>
-          </li>
-          <li class="nav-item bg-transparent">
-            <a class="nav-link rounded-1 fw-semibold fst-italic" href="#">Stats</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-light bg-transparent">
+        <div class="container-fluid bg-transparent d-flex gap-1">
+          <img src="../assets/img/logo.png" alt="logo" class="imglogo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-2 container-fluid d-flex justify-content-end bg-transparent">
+              <li class="nav-item bg-transparent">
+                <a class="nav-link rounded-1 fw-semibold fst-itali" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item bg-transparent">
+                <a class="nav-link rounded-1 fw-semibold fst-itali" href="../pages/upcomingevents.html">UPCOMING EVENTS</a>
+              </li>
+              <li class="nav-item bg-transparent">
+                <a class="nav-link rounded-1 fw-semibold fst-itali" href="../pages/pastevents.html">PAST EVENTS</a>
+              </li>
+              <li class="nav-item bg-transparent">
+                <a class="nav-link rounded-1 fw-semibold fst-itali" href="../pages/contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item bg-transparent">
+                <a class="nav-link rounded-1 fw-semibold fst-itali" href="../pages/stats.html">STATS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <div class="">
-        <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assets/img/banner_1.jpg" class=" img-carrusel d-block w-100" width="100%" height="230px" alt="..." >
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/img/banner_2.jpg" class="d-block w-100" width="100%" height="230px" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/img/banner_3.jpg" class="d-block w-100" width="100%" height="230px" alt="...">
-            </div>
+      <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/img/banner_2.jpg" class="d-block w-100 img-carrusel" style="height: 250px ;" alt="banner_2">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <div class="container-fluid row col-12 p-5 ">
-          <div class="card mb-3 container-fluid card_details" style="max-width: 1000px;">
-            <div class="row g-0 card_details">
-              <div class="col-md-4 card_details">
-                <img src="../assets/img/imagen_7.jpg" class="img-fluid rounded" alt="...">
-              </div>
-              <div class="col-md-8 d-flex align-items-center card_details">
-                <div class="card-body card_details">
-                  <h5 class="card-title text-center fw-bold text_details bg-transparent">School Book Fair</h5>
-                  <p class="card-text text-center text_details bg-transparent">Bring your unused school book and bring the one you need</p>
-                </div>
-              </div>
-            </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_0.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_0">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_1.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_1">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_3.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_3">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_4.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_4">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_5.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_5">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_6.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_6">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_7.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_7">
           </div>
         </div>
+      </div>
+<!-- carta de details -->
+      <div class="container-fluid d-flex justify-content-center p-5 container_details" id="container_details"></div>
     </main>
     <footer class="container-fluid  pt-2 footer">
-      <div class=" footer container-fluid d-flex justify-content-evenly align-items-center row col-12">
-        <img src="../assets/img/logo_ig.png"  class="img-fluid col-2 logos_footer" alt="...">
-        <img src="../assets/img/logo_face.png" class="img-fluid col-2 logos_footer" alt="...">
-        <img src="../assets/img/wpp_logo.png" class="img-fluid col-2 logos_footer" alt="...">
-        <p class="col-6 text-end bg-transparent">Cohorte 35/36</p>
-      </div>
+      <div
+        class="footer container-fluid d-flex justify-content-around align-items-center flex-wrap">
+        <a href="#">
+          <img src="../assets/img/logo_face.png" alt="">
+        </a>
+        <a href="#">
+          <img src="../assets/img/logo_ig.png" alt="">
+        </a>
+        <a href="#">
+          <img src="../assets/img/wpp_logo.png" alt="">
+        </a>
+        <p class="text-end bg-transparent pt-2">©2022 COHORTE 35 / 36 - MINHUB</p>
+        <p class="text-end bg-transparent pt-2">CREATED BY DUARTE BAZAN ROCÍO</p>
+      <div>
     </footer>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/details.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   </body>
 </html>

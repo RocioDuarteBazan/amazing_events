@@ -2,53 +2,81 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fce4ec;
+    background-color: #212121;
 }
 
 .header{
-    background-color: #ad1457;
+    background-color:black;
+}
+
+.carrusel_edicion{
+    border-radius: 50px;
 }
 
 .imglogo{
-    background-color: #78002e;
     object-fit: contain;
+    width: 180px;
+    border-radius: 3px;
 }
 
 .nav-item{
-    background-color:#f06292 ;
-   
+    background-color:#f06292;
 }
 
 .nav-link{
-    background-color: #f06292;
-    color: #78002e;
+    background-color: #7b1fa2;
+    color: #f5f5f5;
+    font-family: 'Barlow', sans-serif;
 }
 
 .active{
-    background-color: #78002e;
-    color: #f06292 ;
+    background-color: #424242;
+    color: #ee98fb;
 }
 
 .nav-link:hover{
-    background-color: #78002e;
-    color: #f06292 ;
+    background: linear-gradient(to right, rgb(0, 204, 255), rgb(153, 51, 255) 31%, rgb(230, 70, 182) 52%, rgb(255, 249, 170) 77%, rgb(0, 255, 153), rgb(0, 204, 255)) 0% 50% / 200% 50%;
+    color: #f5f5f5;
 }
 
 .active:hover{
-    background-color: #f06292;
+    background-color: #6a1b9a;
     color: #78002e;
 }
 
 .img-carrusel{
     object-fit: cover;
+    object-position: 0% 45%;
+}
+
+.lupita_search{ 
+    background: linear-gradient(45deg, rgb(153, 51, 255) 0%, rgb(255, 102, 102) 50%, rgb(153, 51, 255) 100%);
+    background-size: 400%;
+    border-radius: 10px ;
 }
 
 .texto_check{
-    color: #78002e;
+    font-family: 'Barlow', sans-serif;
+    color: #ee98fb;
 }
 
 .container-cards{
-    background-color: #ad1457;
+    background-color: #ab47bc;
+    box-shadow: inset 0 0 5px #ab47bc, 0 0 10px #ab47bc;
+    width: 16rem; 
+    height: 25rem;
+    border-radius: 5px;
+}
+
+.container-card-text{
+    background-color: #ab47bc;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.card_title{
+    background-color: transparent;
+    color: #fce4ec;
+    font-weight: bolder;
 }
 
 .cards-texto{
@@ -59,29 +87,74 @@
 .img-cards{
     object-fit: cover;
     background-color: transparent;
+    height: 50%; 
+    width: 100%;
 }
 
 .boton-cards{
     background-color: #ffffff;
     color: #78002e;
-    border: none;
+    font-family: 'Barlow', sans-serif;
+}
+
+.boton-cards:hover{
+    background: linear-gradient(to right, rgb(0, 204, 255), rgb(153, 51, 255) 31%, rgb(230, 70, 182) 52%, rgb(255, 249, 170) 77%, rgb(0, 255, 153), rgb(0, 204, 255)) 0% 50% / 200% 50%;
 }
 
 .card_details{
-    background-color:  #ad1457;
+    background-color: #ab47bc;
+    box-shadow: inset 0 0 5px #ab47bc, 0 0 10px #ab47bc;
+}
+
+.img-details{
+    width: 250px;
+    height: 213px;
+    object-fit: cover;
 }
 
 .text_details{
-color: #fce4ec;
+    color: #fce4ec;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+.text-form {
+    background:#6a1b9a ;
+    color: #fce4ec;
+    font-family: 'Barlow', sans-serif;
 }
 
 .footer{
-    background-color: #78002e;
+    background-color: black;
     color: #fce4ec;
+    font-family: 'Barlow', sans-serif;
 }
 
-.logos_footer{
-    background-color: transparent;
-    width: 50px;
-    height: 30px;
+
+@media screen and (max-width: 993px){
+    .nav-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container_details{
+        display: flex;
+        flex-direction: column;
+    }
+    .img-details{
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
 }

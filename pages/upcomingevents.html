@@ -1,185 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Amazing Events </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/style/style_1.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title id="title">Amazing Events- Upcoming </title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/style/style_1.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header container-fluid">
-      <div class="container-fluid d-flex row p-4 bg-transparent">
-        <img class=" imglogo rounded-1 col-2" src="../assets/img/logo.png" alt="logo" >
-        <ul class="nav justify-content-end align-items-center col-10 gap-5 bg-transparent">
-          <li class="nav-item bg-transparent">
-            <a class="nav-link rounded-1 fw-semibold fst-italic" aria-current="page" href="/index.html">Home</a>
-          </li>
-          <li class="nav-item bg-transparent">
-            <a class="nav-link active rounded-1 fw-semibold fst-italic" href="#">Upcoming Events</a>
-          </li>
-          <li class="nav-item bg-transparent">
-            <a class="nav-link rounded-1 fw-semibold fst-italic" href="../pages/pastevents.html">Past Events</a>
-          </li>
-          <li class="nav-item bg-transparent">
-            <a class="nav-link rounded-1 fw-semibold fst-italic" href="../pages/contact.html">Contact</a>
-          </li>
-          <li class="nav-item bg-transparent">
-            <a class="nav-link rounded-1 fw-semibold fst-italic" href="../pages/stats.html">Stats</a>
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-light bg-transparent">
+        <div class="container-fluid bg-transparent d-flex gap-1">
+          <img src="../assets/img/logo.png" alt="logo" class="imglogo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse bg-transparent" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 gap-2 container-fluid d-flex justify-content-end bg-transparent">
+              <li class="nav-item bg-transparent">
+                <a class="nav-link rounded-1 fw-semibold fst-itali" aria-current="page" href="../index.html">HOME</a>
+              </li>
+              <li class="nav-item bg-transparent">
+                <a class="nav-link active rounded-1 fw-semibold fst-itali" href="#">UPCOMING EVENTS</a>
+              </li>
+              <li class="nav-item bg-transparent">
+                <a class="nav-link rounded-1 fw-semibold fst-itali" href="../pages/pastevents.html">PAST EVENTS</a>
+              </li>
+              <li class="nav-item bg-transparent">
+                <a class="nav-link rounded-1 fw-semibold fst-itali" href="../pages/contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item bg-transparent">
+                <a class="nav-link rounded-1 fw-semibold fst-itali" href="../pages/stats.html">STATS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <div class="">
-        <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assets/img/banner_1.jpg" class=" img-carrusel d-block w-100" width="100%" height="230px" alt="..." >
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/img/banner_2.jpg" class="d-block w-100" width="100%" height="230px" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/img/banner_3.jpg" class="d-block w-100" width="100%" height="230px" alt="...">
-            </div>
+      <div class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/img/banner_2.jpg" class="d-block w-100 img-carrusel" style="height: 250px ;" alt="banner_2">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
- 
-        <div class="container-fluid d-flex justify-content-between align-items-center row col-12">
-          <div class="container-fluis d-flex row justify-content-around col-7 pt-3">
-            <div class="form-check form-check-inline col-1">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-              <label class="form-check-label texto_check fw-semibold" for="inlineCheckbox1">Cinema</label>
-            </div>
-            <div class="form-check form-check-inline col-1">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-              <label class="form-check-label texto_check fw-semibold" for="inlineCheckbox2">Concert</label>
-            </div>
-            <div class="form-check form-check-inline col-1">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-              <label class="form-check-label texto_check fw-semibold" for="inlineCheckbox3">Food</label>
-            </div>
-            <div class="form-check form-check-inline col-1">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-              <label class="form-check-label texto_check fw-semibold" for="inlineCheckbox4">Party</label>
-            </div>
-            <div class="form-check form-check-inline col-1">
-              <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-              <label class="form-check-label texto_check fw-semibold " for="inlineCheckbox5">Race</label>
-            </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_0.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_0">
           </div>
-          <div class="container-fluid d-flex row col-5 pt-3">
-            <nav class="navbar d-flex">
-              <form class="container-fluid col-10">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" class="bi bi-search" viewBox="-5 -5 20 20">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                  </svg>
-                </div>
-              </form>
-            </nav>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_1.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_1">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_3.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_3">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_4.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_4">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_5.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_5">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_6.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_6">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/img/banner_7.jpg" class="d-block w-100 img-carrusel" style="height: 250px"  alt="banner_7">
           </div>
         </div>
-
-        <div class="container-fluid d-flex justify-content-evenly row col-12 pt-5 pb-5">
-          <div class="container-cards  card col-2" style="width: 19rem; height: 20rem;">
-            <img src="../assets/img/imagen_1.jpg" class="card-img-top img-cards pt-3" style="height: 40%; width: 100%;" alt="...">
-            <div class=" container-cards card-body">
-              <h5 class=" cards-texto card-title text-center">Cinema</h5>
-              <p class=" cards-texto card-text text-center">Marvel's Avengers 3d premiere the start of an epic saga with your best superheroes.</p>
-              <div class=" cards-texto d-flex justify-content-between align-items-center ">
-                <p class="cards-texto">Price: $250</p>
-                <a href="#" class="btn btn-light  p-1 boton-cards">Show more</a>
+      </div>
+<!-- checkbox -->
+      <div
+        class="container-fluid d-flex align-items-center pt-3" 
+      >
+        <div
+          id="container-check" class="container-fluid d-flex justify-content-evenly" style="width: 400%;"
+        ></div>
+<!-- search -->
+        <div class="container-fluid d-flex">
+          <nav class="navbar d-flex">
+            <form  class="container-fluid col-10">
+              <div class="input-group">
+                <input id="inputSearch"
+                  type="text"
+                  class="form-control"
+                  placeholder=""
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                />
+                   <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="35"
+                    height="38"
+                    class="bi bi-search lupita_search"
+                    viewBox="-5 -5 25 25"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                  />
+                </svg>
+              </span>
               </div>
-            </div>
-          </div>
-          <div class=" container-cards card col-2" style="width: 19rem; height: 20rem;">
-            <img src="../assets/img/imagen_2.jpg" class="card-img-top img-cards pt-3" style="height: 40%; width: 100%;" alt="...">
-            <div class=" container-cards  card-body">
-              <h5 class=" cards-texto card-title text-center">Metallica in concert</h5>
-              <p class=" cards-texto card-text text-center">The only concert of the most emblematic band in the world</p>
-              <div class=" cards-texto d-flex justify-content-between align-items-center pt-4 ">
-                <p class="cards-texto">Price: $150</p>
-                <a href="#" class="btn btn-light p-1 boton-cards">Show more</a>
-              </div>
-            </div>
-          </div>
-          <div class=" container-cards card col-2 " style="width: 19rem; height: 20rem;">
-            <img src="../assets/img/imagen_3.jpg" class="card-img-top img-cards pt-3" style="height: 40%; width: 100%;" alt="...">
-            <div class=" container-cards card-body">
-              <h5 class=" cards-texto card-title fs-5 text-center">Festival of the collectivities</h5>
-              <p class=" cards-texto card-text fs-6  text-center">Enjoy your favorite dishes from different countries in a unique event for the whole family.</p>
-              <div class=" cards-texto d-flex justify-content-between align-items-center  ">
-                <p class="cards-texto">Price: $5</p>
-                <a href="#" class="btn btn-light p-1 boton-cards">Show more</a>
-              </div>
-            </div>
-          </div>
-          <div class=" container-cards card col-2" style="width: 19rem; height: 20rem;">
-            <img src="../assets/img/imagen_4.jpg" class="card-img-top img-cards pt-3" style="height: 40%; width: 100%;"   alt="...">
-            <div class=" container-cards card-body">
-              <h5 class=" cards-texto card-title text-center">Halloween Night</h5>
-              <p class=" cards-texto card-text text-center">Come in your scariest costume character to win amazing prizes.</p>
-              <div class=" cards-texto d-flex justify-content-between pt-4 align-items-center ">
-                <p class="cards-texto text">Price: $12</p>
-                <a href="#" class="btn btn-light p-1 boton-cards">Show more</a>
-              </div>
-            </div>
-          </div>
-          <div class=" container-cards card col-2 mt-4" style="width: 19rem; height: 20rem;">
-            <img src="../assets/img/imagen_5.jpg" class="card-img-top img-cards pt-3" style="height: 40%; width: 100%;"   alt="...">
-            <div class=" container-cards card-body">
-              <h5 class=" cards-texto card-title text-center">10K for life</h5>
-              <p class=" cards-texto card-text text-center">Come and exercise, improve your health and lifestyle</p>
-              <div class=" cards-texto d-flex justify-content-between pt-4 align-items-center ">
-                <p class="cards-texto text">Price: $3</p>
-                <a href="#" class="btn btn-light p-1 boton-cards">Show more</a>
-              </div>
-            </div>
-          </div>
-          <div class=" container-cards card col-2 mt-4" style="width: 19rem; height: 20rem;">
-            <img src="../assets/img/imagen_6.jpg" class="card-img-top img-cards pt-3" style="height: 40%; width: 100%;"   alt="...">
-            <div class=" container-cards card-body">
-              <h5 class=" cards-texto card-title text-center fs-6">Jurassic Park</h5>
-              <p class=" cards-texto card-text text-center fs-6">Let's go to the paleontology museum for an incredible tour to learn about the largest dinosaurs</p>
-              <div class=" cards-texto d-flex justify-content-between pt-1 align-items-center ">
-                <p class="cards-texto text">Price: $15</p>
-                <a href="#" class="btn btn-light pt-1 boton-cards">Show more</a>
-              </div>
-            </div>
-          </div>
-          <div class=" container-cards card col-2 mt-4" style="width: 19rem; height: 20rem;">
-            <img src="../assets/img/imagen_7.jpg" class="card-img-top img-cards pt-3" style="height: 40%; width: 100%;"   alt="...">
-            <div class=" container-cards card-body">
-              <h5 class=" cards-texto card-title text-center">School Book Fair</h5>
-              <p class=" cards-texto card-text text-center">Bring your unused school book and bring the one you need</p>
-              <div class=" cards-texto d-flex justify-content-between pt-4 align-items-center ">
-                <p class="cards-texto text">Price: $1</p>
-                <a href="#" class="btn btn-light p-1 boton-cards">Show more</a>
-              </div>
-            </div>
-          </div>
+            </form>
+          </nav>
         </div>
+      </div>
+      <div class="container-fluid d-flex justify-content-around row col-12 pt-4 pb-4 gap-4" id="main-container"  >
       </div>
     </main>
     <footer class="container-fluid pt-2 footer">
-      <div class=" footer container-fluid d-flex justify-content-evenly align-items-center row col-12">
-        <img src="../assets/img/logo_ig.png"  class="img-fluid col-2 logos_footer" alt="...">
-        <img src="../assets/img/logo_face.png" class="img-fluid col-2 logos_footer" alt="...">
-        <img src="../assets/img/wpp_logo.png" class="img-fluid col-2 logos_footer" alt="...">
-        <p class="col-6 text-end bg-transparent">Cohorte 35/35</p>
-      </div>
+      <div
+        class="footer container-fluid d-flex justify-content-around align-items-center flex-wrap">
+        <a href="">
+          <img src="../assets/img/logo_face.png" alt="">
+        </a>
+        <a href="">
+          <img src="../assets/img/logo_ig.png" alt="">
+        </a>
+        <a href="">
+          <img src="../assets/img/wpp_logo.png" alt="">
+        </a>
+        <p class="text-end bg-transparent pt-2">©2022 COHORTE 35 / 36 - MINHUB</p>
+        <p class="text-end bg-transparent pt-2">CREATED  BY DUARTE BAZAN ROCÍO</p>
+      <div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/data.js"></script>
+    <script src="../assets/js/main.js"></script>
   </body>
 </html>
