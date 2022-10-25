@@ -102,6 +102,7 @@ function getCheckBox(category) {
   `
 }
 
+
 function getCard(event) {
   container.innerHTML += `
     <div class="container-cards d-flex flex-column gap-2">
