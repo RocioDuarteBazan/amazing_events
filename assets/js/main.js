@@ -99,7 +99,7 @@ function getCard(event) {
         </div>
         <div class=" cards-texto d-flex justify-content-around align-items-center ">
             <p class="cards-texto pt-3">Price: $ ${event.price}</p>
-            <a  href=""../pages/details.html?id=${event.id}" class="btn btn-light p-1 boton-cards">Details</a>
+            <a  href="../pages/details.html?id=${event.id}" class="btn btn-light p-1 boton-cards">Details</a>
         </div>
     </div>
     `
