@@ -63,8 +63,8 @@
 .container-cards{
     background-color: #ab47bc;
     box-shadow: inset 0 0 5px #ab47bc, 0 0 10px #ab47bc;
-    width: 16rem; 
-    height: 25rem;
+    width: 17rem; 
+    height: 27rem;
     border-radius: 5px;
 }
 
@@ -101,14 +101,24 @@
     background: linear-gradient(to right, rgb(0, 204, 255), rgb(153, 51, 255) 31%, rgb(230, 70, 182) 52%, rgb(255, 249, 170) 77%, rgb(0, 255, 153), rgb(0, 204, 255)) 0% 50% / 200% 50%;
 }
 
+.boton-contact{
+    background-color: #ffffff;
+    color: #78002e;
+    font-family: 'Barlow', sans-serif;
+}
+
+.boton-contact:hover{
+    background: linear-gradient(to right, rgb(0, 204, 255), rgb(153, 51, 255) 31%, rgb(230, 70, 182) 52%, rgb(255, 249, 170) 77%, rgb(0, 255, 153), rgb(0, 204, 255)) 0% 50% / 200% 50%;
+}
+
 .card_details{
     background-color: #ab47bc;
     box-shadow: inset 0 0 5px #ab47bc, 0 0 10px #ab47bc;
 }
 
 .img-details{
-    width: 250px;
-    height: 213px;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -124,10 +134,22 @@
     font-family: 'Barlow', sans-serif;
 }
 
+.text-td{
+    color: #fce4ec;
+}
+
+.text-td:hover{
+    background-color: #ab47bc;
+}
+
 .footer{
     background-color: black;
     color: #fce4ec;
     font-family: 'Barlow', sans-serif;
+}
+
+.footer-img {
+    background-color: transparent;
 }
 
 
@@ -157,4 +179,30 @@
         height: 150px;
         object-fit: cover;
     }
+    .boton-contact{
+        width: 80px;
+        height: 35px;
+        
+    }
+    .tabla-edit {
+        font-size: small;
+        margin: 5px;
+    }
 }
+
+@media screen and (max-width: 425px){
+    .boton-contact{
+        display: flex;
+        align-items: center;
+        width: 60px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .footer-img{
+        width: 100%;
+    }
+}
+
