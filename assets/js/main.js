@@ -62,11 +62,24 @@ function cardsBySearch(array, texto) {
   return cardsFilterBySearch
 }
 
+let url 
+ if(title.text.includes('Home')){
+  url = {
+    details: `./pages/details.html`,
+    imgError: `./assets/img/error.png`,
+  }}else{
+    url = {
+      details: `./details.html`,
+      imgError: `../assets/img/error.png`,
+
+    }
+}
+
 function searchNull() {
   container.innerHTML = `
   <article class="container-fluid d-flex justify-content-center align-items-center row col-12">
     <h2 class="text-center text-light">Sorry, invalid search.</h2>
-    <img src="../assets/img/error.png" style="width: 200px;" alt="">
+    <img src="${url.imgError}" style="width: 200px;" alt="">
   </article>
   `;
 }
@@ -99,7 +112,7 @@ function getCard(event) {
         </div>
         <div class=" cards-texto d-flex justify-content-around align-items-center ">
             <p class="cards-texto pt-3">Price: $ ${event.price}</p>
-            <a  href="../pages/details.html?id=${event.id}" class="btn btn-light p-1 boton-cards">Details</a>
+            <a  href="${url.details}?id=${event.id}" class="btn btn-light p-1 boton-cards">Details</a>
         </div>
     </div>
     `
