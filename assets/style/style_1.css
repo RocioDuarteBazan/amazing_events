@@ -101,6 +101,16 @@
     background: linear-gradient(to right, rgb(0, 204, 255), rgb(153, 51, 255) 31%, rgb(230, 70, 182) 52%, rgb(255, 249, 170) 77%, rgb(0, 255, 153), rgb(0, 204, 255)) 0% 50% / 200% 50%;
 }
 
+.boton-contact{
+    background-color: #ffffff;
+    color: #78002e;
+    font-family: 'Barlow', sans-serif;
+}
+
+.boton-contact:hover{
+    background: linear-gradient(to right, rgb(0, 204, 255), rgb(153, 51, 255) 31%, rgb(230, 70, 182) 52%, rgb(255, 249, 170) 77%, rgb(0, 255, 153), rgb(0, 204, 255)) 0% 50% / 200% 50%;
+}
+
 .card_details{
     background-color: #ab47bc;
     box-shadow: inset 0 0 5px #ab47bc, 0 0 10px #ab47bc;
@@ -169,4 +179,20 @@
         height: 150px;
         object-fit: cover;
     }
+    .boton-contact{
+        width: 80px;
+        height: 35px;
+        
+    }
 }
+
+@media screen and (max-width: 768px){
+    .boton-contact{
+        display: flex;
+        align-items: center;
+        width: 60px;
+        height: 30px;
+        font-size: 15px;
+    }
+}
+
