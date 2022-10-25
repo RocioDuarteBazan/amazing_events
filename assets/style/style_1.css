@@ -138,6 +138,10 @@
     font-family: 'Barlow', sans-serif;
 }
 
+.footer-img {
+    background-color: transparent;
+}
+
 
 @media screen and (max-width: 993px){
     .nav-link{
