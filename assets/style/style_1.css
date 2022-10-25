@@ -184,15 +184,25 @@
         height: 35px;
         
     }
+    .tabla-edit {
+        font-size: small;
+        margin: 5px;
+    }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 425px){
     .boton-contact{
         display: flex;
         align-items: center;
         width: 60px;
         height: 30px;
         font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .footer-img{
+        width: 100%;
     }
 }
 
