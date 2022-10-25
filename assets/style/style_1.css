@@ -63,8 +63,8 @@
 .container-cards{
     background-color: #ab47bc;
     box-shadow: inset 0 0 5px #ab47bc, 0 0 10px #ab47bc;
-    width: 16rem; 
-    height: 25rem;
+    width: 17rem; 
+    height: 27rem;
     border-radius: 5px;
 }
 
@@ -107,8 +107,8 @@
 }
 
 .img-details{
-    width: 250px;
-    height: 213px;
+    width: 100%;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -122,6 +122,14 @@
     background:#6a1b9a ;
     color: #fce4ec;
     font-family: 'Barlow', sans-serif;
+}
+
+.text-td{
+    color: #fce4ec;
+}
+
+.text-td:hover{
+    background-color: #ab47bc;
 }
 
 .footer{
